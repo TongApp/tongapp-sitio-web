@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Tongo — Reserva tu cancha</title>
+  <meta name="description" content="El Tongo es la app para reservar canchas deportivas en Colombia: elige la sede, el horario y paga desde el celular.">
+  <meta property="og:title" content="El Tongo — Reserva tu cancha">
+  <meta property="og:description" content="Reserva canchas deportivas en Colombia desde el celular.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://eltongo.com/tongo.png">
+  <meta property="og:url" content="https://eltongo.com/">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="icon" type="image/png" href="tongo.png">
+  <link rel="apple-touch-icon" href="tongo.png">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d0d0d;
+      --surface: #171717;
+      --text: #ffffff;
+      --muted: #a8a8a8;
+      --accent: #b7d110f1;
+      --accent-text: #0d0d0d;
+      --border: #2a2a2a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+    header { padding: 20px 0; font-weight: 800; text-transform: uppercase; font-style: italic; font-size: 1.25rem; letter-spacing: .01em; display: flex; align-items: center; gap: 10px; }
+    header img { width: 36px; height: 36px; border-radius: 8px; }
+    header span { color: var(--accent); }
+    .hero { padding: 40px 0 32px; }
+    h1 { font-weight: 800; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.15; margin: 0 0 16px; }
+    .lead { color: var(--muted); font-size: 1.15rem; margin: 0 0 24px; }
+    .badge {
+      display: inline-block; padding: 6px 12px; border-radius: 999px;
+      background: var(--surface); border: 1px solid var(--border);
+      font-size: .9rem; color: var(--muted);
+    }
+    section { padding: 24px 0; }
+    h2 { font-size: 1.35rem; margin: 0 0 12px; }
+    .cards { display: grid; gap: 12px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 16px;
+    }
+    .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); }
+    a.button {
+      display: inline-block; padding: 12px 20px; border-radius: 12px;
+      background: var(--accent); color: var(--accent-text);
+      text-decoration: none; font-weight: 700;
+    }
+    a { color: var(--accent); }
+    footer { padding: 32px 0 40px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--border); margin-top: 24px; }
+    @media (min-width: 600px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><img src="tongo.png" alt="" width="36" height="36"><div>El <span>Tongo</span></div></header>
+
+    <main>
+      <div class="hero">
+        <p class="badge">Próximamente en Colombia</p>
+        <h1>Reserva tu cancha en minutos.</h1>
+        <p class="lead">
+          El Tongo conecta a quienes quieren jugar con las sedes deportivas del país.
+          Elige el deporte, la sede y el horario, y reserva desde el celular.
+        </p>
+        <a class="button" href="mailto:administracion@eltongo.com">Escríbenos</a>
+      </div>
+
+      <section>
+        <h2>Cómo funciona</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>1. Explora</h3>
+            <p>Busca canchas por ciudad, deporte, precio y disponibilidad.</p>
+          </div>
+          <div class="card">
+            <h3>2. Reserva</h3>
+            <p>Escoge el horario y confirma tu reserva con el pago desde la app.</p>
+          </div>
+          <div class="card">
+            <h3>3. Juega</h3>
+            <p>Llega a la sede con tu reserva confirmada. Sin llamadas ni chats.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>¿Tienes una sede deportiva?</h2>
+        <p class="lead">
+          Publica tus canchas, define tus horarios y tarifas y recibe reservas
+          directamente en tu agenda. Escríbenos y te contamos cómo sumarte.
+        </p>
+        <a class="button" href="mailto:administracion@eltongo.com?subject=Quiero%20publicar%20mi%20sede">Quiero publicar mi sede</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>El Tongo · Reserva de canchas deportivas en Colombia</div>
+      <div>Contacto: <a href="mailto:administracion@eltongo.com">administracion@eltongo.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
