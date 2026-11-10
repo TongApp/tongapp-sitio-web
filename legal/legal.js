@@ -1,6 +1,7 @@
 // Muestra un texto legal desde la API de El Tongo: la base de datos es la fuente y esta página solo
-// lo pinta. `/terminos/` y `/privacidad/` muestran la versión vigente; `?version=AAAA-MM-DD`, una
-// anterior (la que aceptó alguien antes). El tipo sale de <body data-kind="TERMS|PRIVACY">.
+// lo pinta. `/terminos/`, `/privacidad/` y `/propietarios/` muestran la versión vigente;
+// `?version=AAAA-MM-DD`, una anterior (la que aceptó alguien antes). El tipo sale de
+// <body data-kind="TERMS|PRIVACY|OWNER_TERMS">.
 (function () {
   const PRODUCTION_HOSTS = ['eltongo.com', 'www.eltongo.com'];
   // En local el sitio se sirve con `python3 -m http.server` y la API corre en el puerto 8000.
